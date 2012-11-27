@@ -1,8 +1,13 @@
-".container": {
-	backgroundColor:"white"
+"Window": {
+	backgroundColor: "white",
+	layout: "vertical"
 },
-"Label": {
-	width: Ti.UI.SIZE,
+
+"Button": {
+	top: 75,
+	
+	width: 200,
 	height: Ti.UI.SIZE,
+	
 	color: "#000"
-} 
+}

@@ -1,0 +1,19 @@
+"Window": {
+	backgroundColor: "white",
+	
+	layout: "horizontal"
+},
+
+".even": {
+	top: 0, left: 0,
+	width: 9, height: 9,
+	
+	backgroundColor: "#fff"
+},
+
+".odd": {
+	top: 0, left: 0,
+	width: 9, height: 9,
+	
+	backgroundColor: "#f00"
+}
