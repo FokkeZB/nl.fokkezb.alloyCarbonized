@@ -5,7 +5,7 @@ function Controller() {
     require("alloy/controllers/BaseController").apply(this, Array.prototype.slice.call(arguments));
     var $ = this, exports = {};
     
-	$.__views.window = A$(Carbon.UI.load('/alloy/views/json.json'), "Window", null);
+	$.__views.window = A$(Carbon.UI.load("/alloy/views/json.json"), "Window", null);
     $.addTopLevelView($.__views.window);
     $.__views.window.on("click", closeWindow);
     
