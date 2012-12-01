@@ -44,8 +44,13 @@ Well, of course there are some issues that need our attention:
 * Alloy currently wraps all views created by `Ti.UI` in `Alloy.A()`, which also get's passed the type and parent. Nothing is done with these arguments at the moment, but I guess there are plans to do so. It would be nice if only the views that have ID's need reference in JS-land.
 * Alloy also keeps track of all views in the `__views` property of the controller. The same here for the previous issue. Do we really need this reference?
 * Alloy strips out any parts of the view (or styles) that are not relevant for the platform or device you build for. But if you'd wanna use the new `Ti.UI.create()` without Alloy, you'd probably need some way to use platform/device selectors in the object tree you pass, much like Carbon also supports.
+* Error reporting might be an issue if they arise in native-land when parsing the passed dictionary. A solution could be to state the path to the failing declaration like `Error in Windows/View[0]/View#foo/Label[0]`.
 
 ## Discussion
 Probably there's much more to say. Let's do so at:
 
 [https://groups.google.com/forum/#!topic/appc-ti-alloy/0JPSTrNrajM](https://groups.google.com/forum/#!topic/appc-ti-alloy/0JPSTrNrajM)
+
+Also, please watch the JIRA ticket requesting this feature so escalates and hopefully will be added soon:
+
+[https://jira.appcelerator.org/browse/TC-1592](https://jira.appcelerator.org/browse/TC-1592)
